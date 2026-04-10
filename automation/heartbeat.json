@@ -1,0 +1,34 @@
+{
+  "status": "healthy",
+  "timestamp": "2024-01-01T12:00:00Z",
+  "service": "frontend-app",
+  "version": "1.2.3",
+  "environment": "production",
+  "uptime_seconds": 3600,
+  "checks": {
+    "database_connection": {
+      "status": "healthy",
+      "response_time_ms": 15,
+      "details": "Successfully pinged database"
+    },
+    "api_availability": {
+      "status": "healthy",
+      "response_time_ms": 50,
+      "details": "API is responding within acceptable limits"
+    },
+    "cache_health": {
+      "status": "healthy",
+      "response_time_ms": 2,
+      "details": "Cache is operational"
+    },
+    "disk_space": {
+      "status": "warning",
+      "details": "Disk usage is approaching threshold. Current usage: 85%"
+    }
+  },
+  "metrics": {
+    "requests_per_minute": 120,
+    "error_rate": 0.01,
+    "memory_usage_mb": 512
+  }
+}
